@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FIT Food Order & Payment Form</title>
+</head>
+<body style="font-family: Arial; margin: 20px; background-color: white;">
+
+    <h2 style="text-align: center; color: black;">=========Price List=========</h2>
+    <table style="border: 1px black; border-collapse: collapse; margin: 0 auto;">
+        <tr>
+            <th style="border: 1px solid black; padding: 10px;">Food Item</th>
+            <th style="border: 1px solid black; padding: 10px;">Price (Rs.)</th>
+        </tr>
+        <tr><td style="border: 1px black; padding: 10px;">Chicken Pizza</td><td style="border: 1px black; padding: 10px;">700.00</td></tr>
+        <tr><td style="border: 1px black; padding: 10px;">Vegetable Pizza</td><td style="border: 1px black; padding: 10px;">500.00</td></tr>
+        <tr><td style="border: 1px black; padding: 10px;">Chicken Kottu</td><td style="border: 1px black; padding: 10px;">300.00</td></tr>
+        <tr><td style="border: 1px black; padding: 10px;">Vegetable Kottu</td><td style="border: 1px black; padding: 10px;">200.00</td></tr>
+        <tr><td style="border: 1px black; padding: 10px;">Water Bottle</td><td style="border: 1px black; padding: 10px;">70.00</td></tr>
+    </table>
+
+    <div style="background-color: white; padding: 20px; margin: 20px auto; width: 80%; border-radius: 10px; box-shadow: 0 0 10px white;">
+        <h2 style="text-align: center; color: black;">FIT Food - Order Form</h2>
+        <form>
+            <label><b>Branch:</b>
+                <select style="padding: 8px; width: 95%; margin: 5px 0;">
+                    <option>--Select Item--</option>
+                    <option>computer science(Artificial Intelligence)</option>
+                    <option>Artificial Intelligence</option>
+                    <option>Civil</option>
+                    <option>Mechanical</option>
+                </select>
+            </label><br>
+
+            <label><b>User Name:</b>
+                <input type="text" placeholder="Enter Your Name" style="padding: 8px; width: 95%; margin: 5px 0;">
+            </label><br>
+
+            <label><b>Mobile:</b>
+                <input type="text" placeholder="0123456789" style="padding: 8px; width: 95%; margin: 5px 0;">
+            </label><br><br>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <b>Food Item</b>
+                <b>Quantity</b>
+                <b>Price</b>
+
+                <select style="padding: 8px; width: 95%; margin: 5px 0;">
+                    <option>Chicken Pizza</option>
+                    <option>Vegetable Pizza</option>
+                    <option>Chicken Kottu</option>
+                    <option>Vegetable Kottu</option>
+                </select>
+                <input type="number" value="2" style="padding: 8px; width: 95%; margin: 5px 0;">
+                <input type="text" value="700" style="padding: 8px; width: 95%; margin: 5px 0;">
+
+                <select style="padding: 8px; width: 95%; margin: 5px 0;">
+                    <option>Chicken Pizza</option>
+                    <option>Vegetable Pizza</option>
+                    <option>Chicken Kottu</option>
+                    <option>Vegetable Kottu</option>
+                </select>
+                <input type="number" value="3" style="padding: 8px; width: 95%; margin: 5px 0;">
+                <input type="text" value="500" style="padding: 8px; width: 95%; margin: 5px 0;">
+
+                <select style="padding: 8px; width: 95%; margin: 5px 0;">
+                    <option>Chicken Pizza</option>
+                    <option>Vegetable Pizza</option>
+                    <option>Chicken Kottu</option>
+                    <option>Vegetable Kottu</option>
+                </select>
+                <input type="number" value="2" style="padding: 8px; width: 95%; margin: 5px 0;">
+                <input type="text" value="300" style="padding: 8px; width: 95%; margin: 5px 0;">
+
+                <select style="padding: 8px; width: 95%; margin: 5px 0;">
+                    <option>Chicken Pizza</option>
+                    <option>Vegetable Pizza</option>
+                    <option>Chicken Kottu</option>
+                    <option>Vegetable Kottu</option>
+                </select>
+                <input type="number" value="1" style="padding: 8px; width: 95%; margin: 5px 0;">
+                <input type="text" value="200" style="padding: 8px; width: 95%; margin: 5px 0;">
+            </div>
+
+            <br>
+            <button type="button" style="background-color: green; color: white; padding: 10px 20px; margin: 10px 5px; border: none; cursor: pointer;">Create Bill</button>
+            <button type="reset" style="background-color: green; color: white; padding: 10px 20px; margin: 10px 5px; border: none; cursor: pointer;">Clear</button>
+        </form>
+    </div>
+
+    <div style="background-color: white; padding: 20px; margin: 20px auto; width: 80%; border-radius: 10px; box-shadow: 0 0 10px white;">
+        <h2 style="text-align: center; color: black;">Billing Address & Payment</h2>
+        <form>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <div style="flex: 1; min-width: 250px;">
+                    <label><b>Full Name:</b></label>
+                    <input type="text" placeholder="Enter Your Full Name" style="padding: 8px; width: 95%; margin: 5px 0;">
+
+                    <label><b>Email:</b></label>
+                    <input type="email" placeholder="Enter Email Address" style="padding: 8px; width: 95%; margin: 5px 0;">
+
+                    <label><b>Address:</b></label>
+                    <input type="text" placeholder="Enter Address" style="padding: 8px; width: 95%; margin: 5px 0;">
+
+                    <label><b>City:</b></label>
+                    <input type="text" placeholder="Enter City" style="padding: 8px; width: 95%; margin: 5px 0;">
+
+                    <label><b>State:</b></label>
+                    <input type="text" placeholder="Enter State" style="padding: 8px; width: 95%; margin: 5px 0;">
+
+                    <label><b>Zip Code:</b></label>
+                    <input type="text" placeholder="123456" style="padding: 8px; width: 95%; margin: 5px 0;">
+                </div>
+
+                <div style="flex: 1; min-width: 250px;">
+                    <label><b>Card Accepted:</b></label><br>
+                    <img src="https://img.icons8.com/color/48/paypal.png" width="40">
+                    <img src="https://img.icons8.com/color/48/mastercard.png" width="40">
+                    <img src="https://img.icons8.com/color/48/amex.png" width="40">
+                    <img src="https://img.icons8.com/color/48/visa.png" width="40"><br><br>
+
+                    <label><b>Name on Card:</b></label>
+                    <input type="text" placeholder="Enter Card Name" style="padding: 8px; width: 95%; margin: 5px 0;">
+
+                    <label><b>Credit Card Number:</b></label>
+                    <input type="text" placeholder="1111-2222-3333-4444" style="padding: 8px; width: 95%; margin: 5px 0;">
+
+                    <label><b>Exp Month:</b></label>
+                    <select style="padding: 8px; width: 95%; margin: 5px 0;">
+                        <option>Choose Month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <!-- Add other months -->
+                    </select>
+
+                    <label><b>Exp Year:</b></label>
+                    <select style="padding: 8px; width: 95%; margin: 5px 0;">
+                        <option>Choose Year</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                    </select>
+
+                    <label><b>CVV:</b></label>
+                    <input type="text" placeholder="123" style="padding: 8px; width: 95%; margin: 5px 0;">
+                </div>
+            </div>
+
+            <br>
+            <button type="button" style="width: 100%; background-color: green; color: white; padding: 10px;">Proceed To Checkout</button>
+        </form>
+    </div>
+
+</body>
+</html>
